@@ -3,7 +3,6 @@ async function  getData(URL){
   let response = await fetch(URL)
   let data = await response.json()
   showData(data.data)
-//   filterDepartment(data.data)
 }
 getData("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-employees")
 
@@ -47,13 +46,32 @@ let filter_department = document.getElementById("filter_department")
 filter_department.addEventListener("change",filterDepartment)
 
 
-function filterDepartment(){
+function filterDepartment(arr){
    
-    let value = 
+    let value = document.querySelectorAll("#filter_department>option")
+  
+     
+   
+}
 
-    console.log(value)
-    // let newarr = arr.filter((ele)=>{
-    //     return ele.department
-    // })
-   
+//filterByGender
+
+
+let filter_gender = document.getElementById("filter_gender")
+
+filter_gender.addEventListener("change", filterGender)
+
+function filterGender(){
+
+}
+
+//sort by salary
+
+let sort_price = document.getElementById("sort_price")
+
+sort_price.addEventListener("change",sortPrice)
+
+function sortPrice(){
+
+
 }
