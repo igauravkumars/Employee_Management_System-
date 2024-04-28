@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Employee Management System</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="department">
+            <h4>Filter by department</h4>
+            <select id="filter_department">
+                <option value="">--Select department--</option>
+                <option id="hr" value="hr">hr</option>
+                <option value="finance">finance</option>
+                <option value="marketing"> marketing</option>
+                <option value="engineering">engineering</option>
+                <option value="operations">operations</option>
+            </select>
+        </div>
+        <div id="gender">
+            <h4>Filter by Gender</h4>
+            <select id="filter_gender">
+                <option value="">--Select Gender--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div id="price">
+            <h4>Sort by salary</h4>
+            <select id="sort_price">
+                <option value="">--Select price--</option>
+                <option value="asc">Low to High</option>
+                <option value="desc">High to Low</option>
+                
+            </select>
+        </div>
+    </div>
+    <table id="table">
+        <thead id="tbody">
+            <th> S.no</th>
+            <th>Name </th>
+            <th>Gender </th>
+            <th>Department</th>
+            <th>Salary </th>
+         </thead>
+        <tbody id="thead">
+             
+        </tbody>
+           
+    </table>
+    
+    
+    <script src="./index.js"></script>
+</body>
+</html>
